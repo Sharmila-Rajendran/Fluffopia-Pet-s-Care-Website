@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluffopia - Pet's Care Services</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS (v5.3+) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Bundle with Popper (for Carousel & Nav Toggle) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+    <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+        <h1 class="logo">Fluffopia <i class="fa-solid fa-paw"></i></h1>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Cart Icon -->
+        <a href="cart.html" class="cart-icon">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </a>
+        <button id="darkModeToggle" class="btn btn-outline-secondary btn-sm ms-3">🌙 Dark Mode</button>
+        <button id="navToggle" class="btn btn-outline-secondary d-md-none ms-2">
+            <i class="fas fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Welcome to</h1>
+      <h1><span>Fluffopia</span></h1>
+      <p>Luxury Care for Your Furry Family</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn">Explore Products</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Featured Product Cards -->
+    <div class="container">
+        <div class="row">
+            <!-- Best Sellers -->
+            <h1 class="cardhead">Best Sellers</h1>
+            <h2 class="cardhead1">Top Picks for Your Pet</h2>
+            <div class="card-row">
+            <div class="card fade-left animate">
+                <img src="Asserts/dog-treats-6870910_1280.jpg" class="card-img-top" alt="Bones">
+                <div class="card-body">
+                    <p class="card-text">Bones</p>
+                </div>
+            </div>
+            <div class="card fade-left animate">
+                <img src="Asserts/cat-2170494_1280.jpg" class="card-img-top" alt="Cat Food">
+                <div class="card-body">
+                    <p class="card-text">Cat Food</p>
+                </div>
+            </div>
+            <div class="card fade-left animate">
+                <img src="Asserts/dog-560148_1280.jpg" class="card-img-top" alt="Ball">
+                <div class="card-body">
+                    <p class="card-text">Ball</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- New Arrivals -->
+            <h1 class="cardhead">New Arrivals</h1>
+            <h2 class="cardhead1">New In Store</h2>
+            <div class="card-row">
+                <div class="card fade-left animate">
+                    <img src="Asserts/bulldog-1047518_1280.jpg" class="card-img-top" alt="Dog Bed">
+                    <div class="card-body">
+                        <p class="card-text">Dog’s Bed</p>
+                    </div>
+                </div>
+                <div class="card fade-left animate">
+                    <img src="Asserts/cat-7143532_1280.jpg" class="card-img-top" alt="Cat Collar">
+                    <div class="card-body">
+                        <p class="card-text">Cat Collar</p>
+                    </div>
+                </div>
+                <div class="card fade-left animate">
+                    <img src="Asserts/dog-1133311_1280.jpg" class="card-img-top" alt="Dog Raincoat">
+                    <div class="card-body">
+                        <p class="card-text">Dog’s Raincoat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offers -->
+            <h1 class="cardhead">Special Offers</h1>
+            <h2 class="cardhead1">Special Deals Just for You</h2>
+            <div class="card-row">
+                <div class="card fade-left animate">
+                    <img src="Asserts/Yellow Modern Pet For Dog Food Poster.png" class="card-img-top spcl" alt="Special Offer 1">
+                    <div class="card-body">
+                        <p class="card-text">Special Offer 1</p>
+                    </div>
+                </div>
+                <div class="card fade-left animate">
+                    <img src="Asserts/Yellow Modern Pet Shop Promo Poster.png" class="card-img-top spcl" alt="Special Offer 2">
+                    <div class="card-body">
+                        <p class="card-text">Special Offer 2</p>
+                    </div>
+                </div>
+                <div class="card fade-left animate">
+                    <img src="Asserts/Orange Pet Shop (Poster) (1).png" class="card-img-top spcl" alt="Special Offer 3">
+                    <div class="card-body">
+                        <p class="card-text">Special Offer 3</p>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- CTA Block -->
+        <div class="row">
+            <div class="col-12 animate" id="join">
+                <h1>Join the Fluffopia Family Today!</h1>
+                <p>Ready to become a part of the Fluffopia family? Call us at 9876556789 or fill out our online contact form below to get started!</p>
+                <a href="#contact">
+                <i class="fa-solid fa-arrow-right"> <b style="font-size: 10px;">Click Here</b></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- About Section -->
+    <section id="about" class="bg-light animate">
+        <div class="container">
+            <div class="row">
+                <header>About Us</header>
+            </div>
+
+            <!-- Intro -->
+            <div class="row" id="intro">
+                <div class="col-12 animate">
+                    <p>Welcome to Fluffopia! We are dedicated to providing the best care for your beloved pets. Our team of experienced professionals is passionate about pets and their well-being.</p>
+                </div>
+            </div>
+
+            <!-- Our Story -->
+            <div id="story" class="animate slide-left">
+                <div class="kitten">
+                    <img src="Asserts/kitten-4611189_1280.jpg" alt="Our Story Image">
+                </div>
+                <div class="stry">
+                    <h2>Our Story</h2>
+                    <p>Fluffopia started with a simple idea: to create a safe and joyful environment for pets to thrive. Over the years, we've grown into a full-service pet care facility offering a wide range of services to cater to every need of your furry friends. We pride ourselves on our state-of-the-art facilities that provide a comfortable and engaging atmosphere for pets of all sizes and breeds. Our dedicated team continuously undergoes training and education to stay updated on the latest in pet care, ensuring your pets receive the highest standard of care possible.</p>
+                </div>
+            </div>
+
+            <!-- Meet the Team -->
+            <div class="row" id="abtrow">
+                <h2 class="meet">Meet the Team</h2>
+
+                <div class="col-4">
+                    <div class="card fade-left animate" style="width: 24rem;">
+                        <img src="Asserts/Image1.jpg" class="card-img-top" alt="Nathainiel Pope">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color:cadetblue;">Nathainiel Pope</h5>
+                            <p class="card-text">Nathainiel Pope is a compassionate and skilled veterinarian with over 10 years of experience. He is dedicated to ensuring the health and well-being of all pets at Fluffopia, offering expert care and medical advice.</p>
+                            <a href="#" class="btn btn-outline-danger" id="butt">Message</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card fade-left animate" style="width: 24rem;">
+                        <img src="Asserts/Image2.jpg" class="card-img-top" alt="Marshall">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color:cadetblue;">Marshall</h5>
+                            <p class="card-text">Marshall is a talented pet groomer who has been pampering pets for over 8 years. His gentle touch and keen eye for detail ensure that every pet leaves looking and feeling their best.</p>
+                            <a href="#" class="btn btn-outline-danger" id="butt">Message</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card fade-left animate" style="width: 24rem;">
+                        <img src="Asserts/Image3.jpg" class="card-img-top" alt="Rona Jose">
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color:cadetblue;">Rona Jose</h5>
+                            <p class="card-text">Rona Jose is a certified pet trainer with a passion for helping pets and their owners build strong, positive relationships. With over 5 years of experience, she specializes in obedience training and behavior modification.</p>
+                            <a href="#" class="btn btn-outline-danger" id="butt">Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Tour -->
+            <div class="row animate">
+                <h2 class="meet">Video Tour</h2>
+                <video width="100%" controls>
+                    <source src="Asserts/135025-760679997_small.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Mission and Vision -->
+            <div class="row">
+                <div class="animate fade-in" id="mission">
+                    <h2>Mission and Vision</h2>
+                    <h4>Mission</h4>
+                    <p>Our mission is to enhance the lives of pets and their owners by offering exceptional care and services. We are committed to creating a nurturing environment where pets feel loved, secure, and excited to visit.</p>
+                    <h4>Vision</h4>
+                    <p>We envision a world where every pet is healthy, happy, and well-cared for. Our vision includes:</p>
+                    <ul>
+                        <li class="list">Being a trusted partner for pet owners, offering comprehensive care that spans grooming, training, healthcare, and more.</li>
+                        <li class="list">Promoting responsible pet ownership through education and community outreach programs.</li>
+                        <li class="list">Continuously innovating our services to meet the evolving needs of pets and their owners, ensuring we remain at the forefront of the pet care industry.</li>
+                        <li class="list">Building a community of pet lovers who share our commitment to the well-being and happiness of all animals.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Products Section -->
+    <section id="products" class="section animate">
+        <div class="container">
+            <!-- 🔍 Search Bar -->
+            <div class="container my-4">
+                <input
+                    type="text"
+                    id="productSearch"
+                    class="form-control"
+                    placeholder="Search for products (e.g., Dog Food, Cat Toy...)"
+                />
+            </div>
+
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Hand-picked essentials for happy, healthy pets.</p>
+
+            <!-- Filter Tabs -->
+            <div class="product-filters text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="toys">Toys</button>
+                <button class="filter-btn" data-filter="health">Health</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+
+            <div class="product-category" data-category-group="food">
+                <h3>Pet Food</h3>
+                <div class="product-grid">
+                    <div class="product-card zoom-in animate" data-category="food">
+                        <img src="Asserts/dog-food-5168940_1280.jpg" alt="Dog Food">
+                        <h4>Organic Dog Food</h4>
+                        <p>$25.00</p>
+                        <button class="btn add-to-cart" data-title="Organic Dog Food" data-price="25.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Organic Dog Food" data-price="25.00">Buy Now</button>
+                    </div>
+                    <div class="product-card zoom-in animate" data-category="food">
+                        <img src="Asserts/pexels-vladimirsrajber-20635784.jpg" alt="Cat Food">
+                        <h4>Premium Cat Food</h4>
+                        <p>$20.00</p>
+                        <button class="btn add-to-cart" data-title="Premium Cat Food" data-price="20.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Premium Cat Food" data-price="20.00">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category" data-category-group="toys">
+                <h3>Toys & Enrichment</h3>
+                <div class="product-grid">
+                    <div class="product-card zoom-in animate" data-category="toys">
+                        <img src="Asserts/cat-4994140_1280.jpg" alt="Cat Toy">
+                        <h4>Interactive Cat Toy</h4>
+                        <p>$15.00</p>
+                        <button class="btn add-to-cart" data-title="Interactive Cat Toy" data-price="15.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Interactive Cat Toy" data-price="15.00">Buy Now</button>
+                    </div>
+                    <div class="product-card zoom-in animate" data-category="toys">
+                        <img src="Asserts/dog-167663_1280.jpg" alt="Chew Toy">
+                        <h4>Durable Dog Chew Toy</h4>
+                        <p>$10.00</p>
+                        <button class="btn add-to-cart" data-title="Dog Chew Toy" data-price="10.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Dog Chew Toy" data-price="10.00">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category" data-category-group="health">
+                <h3>Health & Wellness</h3>
+                <div class="product-grid">
+                    <div class="product-card zoom-in animate" data-category="health">
+                        <img src="Asserts/massage-therapy-1612308_1280.jpg" alt="Wellness Supplement">
+                        <h4>Pet Wellness Supplement</h4>
+                        <p>$30.00</p>
+                        <button class="btn add-to-cart" data-title="Wellness Supplement" data-price="30.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Wellness Supplement" data-price="30.00">Buy Now</button>
+                    </div>
+                    <div class="product-card zoom-in animate" data-category="health">
+                        <img src="Asserts/medicine-5037941_1280.jpg" alt="Flea & Tick Prevention">
+                        <h4>Flea & Tick Prevention</h4>
+                        <p>$25.00</p>
+                        <button class="btn add-to-cart" data-title="Flea & Tick Prevention" data-price="25.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Flea & Tick Prevention" data-price="25.00">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-category" data-category-group="accessories">
+                <h3>Accessories</h3>
+                <div class="product-grid">
+                    <div class="product-card zoom-in animate" data-category="accessories">
+                        <img src="Asserts/Image2.jpg" alt="Harness">
+                        <h4>Adjustable Dog Harness</h4>
+                        <p>$35.00</p>
+                        <button class="btn add-to-cart" data-title="Dog Harness" data-price="35.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Dog Harness" data-price="35.00">Buy Now</button>
+                    </div>
+                    <div class="product-card zoom-in animate" data-category="accessories">
+                        <img src="Asserts/cat-7203072_1280.jpg" alt="Cat Tree">
+                        <h4>Luxury Cat Tree</h4>
+                        <p>$100.00</p>
+                        <button class="btn add-to-cart" data-title="Cat Tree" data-price="100.00">Add to Cart</button>
+                        <button class="btn buy-now" data-title="Cat Tree" data-price="100.00">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Services Section -->
+    <section id="services" class="section bg-light animate">
+        <div class="container">
+            <h2 class="section-title text-center">Our Services</h2>
+            <p class="section-subtitle text-center">From grooming to healthcare — we've got it all covered.</p>
+
+            <div class="service-list">
+                <div class="service-card animate">
+                    <h4>🐾 Grooming</h4>
+                    <p>Professional grooming services to keep your pet clean, stylish, and happy. From baths to full grooming packages.</p>
+                    <p><strong>Price:</strong> Starts at $30</p>
+                </div>
+
+                <div class="service-card animate">
+                    <h4>🎓 Training</h4>
+                    <p>Obedience training, behavior modification, and fun trick learning with our certified trainers.</p>
+                    <p><strong>Price:</strong> $50 per session</p>
+                </div>
+
+                <div class="service-card animate">
+                    <h4>🩺 Veterinary Care</h4>
+                    <p>Routine check-ups, vaccinations, dental, and emergency services from licensed vets.</p>
+                    <p><strong>Price:</strong> Varies based on service</p>
+                </div>
+
+                <div class="service-card animate">
+                    <h4>🐶 Daycare</h4>
+                    <p>A safe and fun environment for pets to socialize, play, and nap while you're away.</p>
+                    <p><strong>Price:</strong> $20 per day</p>
+                </div>
+
+                <div class="service-card animate">
+                    <h4>🏨 Boarding</h4>
+                    <p>Comfortable and secure overnight stays with daily walks, feeding, and lots of cuddles.</p>
+                    <p><strong>Price:</strong> $40 per night</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ========= Contact Section ========= -->
+<section id="contact" class="contact-section animate">
+  <h2 class="section-title text-center">📬 Get in Touch</h2>
+  <p class="section-subtitle text-center">Have questions or need help? Reach out!</p>
+
+  <div class="contact-section">
+    <!-- 📥 Contact Form -->
+    <div class="form-box">
+      <form id="contactForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Ex: John Doe" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control" placeholder="Ex: john@example.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" class="form-control" placeholder="Mobile number">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- 🧭 Contact Info + Social -->
+    <div class="info-box">
+      <h5>📍 Contact Information</h5>
+      <ul style="list-style: none; padding-left: 0; margin-top: 1rem; margin-bottom: 1.5rem;">
+        <li><i class="fas fa-map-marker-alt"></i> 129 Fluffopia Way, Mannarkad</li>
+        <li><i class="fas fa-phone"></i> +91 9876556789</li>
+        <li><i class="fas fa-envelope"></i> info@fluffopia.com</li>
+      </ul>
+
+      <h6>🌐 Follow Us</h6>
+      <div style="margin-top: 0.8rem;">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" aria-label="Instagram" style="margin: 0 10px;"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chatbot -->
+  <div class="chatbox-container animate" style="margin-top: 3rem;">
+    <div class="card" style="padding: 1.5rem; border-radius: 10px; background: #1e1e1e;">
+      <h5 class="text-center text-white" style="margin-bottom: 1rem;">PetBot 🤖 - Ask Us Anything!</h5>
+      <div id="chatboxBody" style="height: 200px; overflow-y: auto; background: #f8f8f8; border-radius: 6px; padding: 1rem;"></div>
+      <div style="display: flex; margin-top: 1rem; gap: 0.5rem;">
+        <input type="text" id="chatInput" placeholder="Type a message..." class="form-control" style="flex: 1;">
+        <button class="btn" id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 🛍️ Cart Modal -->
+    <div id="cartModal" class="cart-modal hidden">
+        <div class="cart-content">
+            <span class="close-btn" id="closeCart">&times;</span>
+            <h3>Your Cart</h3>
+            <div id="cartItemsModal"></div>
+            <h4 id="modalTotal">Total: $0.00</h4>
+            <button id="clearCartBtn">Clear Cart</button>
+        </div>
+    </div>
+
+        <button id="back-to-top" class="btn btn-primary" style="
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            border-radius: 50%;
+            padding: 0.6rem 0.8rem;
+            ">
+        ⬆️
+        </button>
+
+
+<!-- Footer -->
+    <footer class="text-white pt-5 pb-3 animate" style="background-color: #0f172a;">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- About Us -->
+                <div class="col-md-3 mb-4">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                    <li>Our Story</li>
+                    <li>Enrichment</li>
+                    <li>Meet the Team</li>
+                    <li>Employee of the Month</li>
+                    </ul>
+                </div>
+                <!-- Products -->
+                <div class="col-md-3 mb-4">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                    <li>Premium Dog Food</li>
+                    <li>Cat Toys</li>
+                    <li>Pet Accessories</li>
+                    <li>Grooming Kits</li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div class="col-md-3 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                    <li>Pet Grooming</li>
+                    <li>Pet Training</li>
+                    <li>Veterinary</li>
+                    <li>Pet Boarding</li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-3 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker-alt me-2"></i>Mannarkad, Palakkad</li>
+                    <li><i class="fa fa-phone me-2"></i>+91 9876556789</li>
+                    <li><i class="fa fa-envelope me-2"></i>info@fluffopia.com</li>
+                    </ul>
+                    <h6 class="mt-3">Follow Us</h6>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="border-light" />
+            <div class="text-center">
+                <p>&copy; 2024 Fluffopia. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
